@@ -45,13 +45,20 @@ img{
     float: left;
     text-transform: uppercase;
     margin-right: 34px;
+    cursor: pointer;
 }
 
-.list-item:hover{
+.list-item a{
+    text-decoration: none;
+    color: #020202;
+
+}
+
+.list-item a:hover{
     color: #1abc9c;
 }
 
-.list-item:focus{
+.list-item a:focus{
     color: #1abc9c;
 }
 
@@ -126,6 +133,10 @@ img{
     background-color: #1abc9c;
 }
 
+.catalog-product:focus .name-product{
+    background-color: #1abc9c;
+}
+
 .price-product{
     width: 55px;
     height: 40px;
@@ -143,6 +154,10 @@ img{
 }
 
 .catalog-product:hover .price-product{
+    background-color: #7fd9c7;
+}
+
+.catalog-product:focus .price-product{
     background-color: #7fd9c7;
 }
 
