@@ -13,9 +13,13 @@ body{
     color: #515151;
     font-size: 14px;
     line-height: normal;
-    width: 1112px;
-    margin-left: 262px;
+}
 
+.wrapper{
+    width: 1112px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
 }
 
 img{
@@ -32,7 +36,7 @@ img{
 
 .list{
     list-style: none;
-    width: 468px;
+    min-width: 468px;
     float: right;
     font-weight: bold;
     color:#020202;
@@ -72,35 +76,24 @@ img{
     font-size: 30px;
     height: 20px;
     width: 76px;
-    margin-right: 570px;
-    margin-top: 8px;
     float: left;
 }
 
-.products{
+/*.products{
     display: inline-block;
     float: left;
     font-size: 30px;
     margin:106px 302px 0px 324px;
-}
+}*/
 
-.products::after{
-    display: block;
-    width: 164px;
-    height: 7px;
-    background-color: #4ec6ab;
-    content: "";
-    margin-left: 146px;
-    margin-top: 30px;
-    margin-bottom: 92px;
-}
+
 
 
 .catalog-product{
     max-width: 255px;
     max-height: 322px;
-       float:left;
-       margin-right: 30px;
+    float:left;
+    margin-right: 30px;
    }
 
 .catalog-product:nth-of-type(4n){
@@ -119,6 +112,7 @@ img{
 .name-product{
     width: 200px;
     height: 40px;
+    line-height: 40px;
     background-color: #323232;
     float: left;
     font-size: 18px;
@@ -126,7 +120,7 @@ img{
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
-    padding-top: 9px;
+   /* padding-top: 9px;*/
 }
 
 .catalog-product:hover .name-product{
@@ -140,6 +134,7 @@ img{
 .price-product{
     width: 55px;
     height: 40px;
+    line-height: 40px;
     background-color: #8c8c8c;
     float: right;
     font-size: 18px;
@@ -149,7 +144,7 @@ img{
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 9px;
+   /* padding-top: 9px;*/
     font-weight: 600;
 }
 
@@ -165,16 +160,33 @@ img{
 
 h2{
      margin: 0px;
+     margin-top: 104px;
      font-weight: 500;
+     text-align: center;
+     font-size: 48px;
+     font-weight: 600;
+     text-transform: uppercase;
  }
 
- .news{display: inline-block;
+ h2::after{
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #4ec6ab;
+    content: "";
+    margin-left: 472px;
+    margin-top: 30px;
+    margin-bottom: 92px;
+}
+
+ /*.news{
+    display: inline-block;
     float: left;
     font-size: 30px;
     margin:104px 404px 0px 400px;
-}
+}*/
 
-.news::after{
+/*.news::after{
     display: block;
     width: 164px;
     height: 7px;
@@ -184,7 +196,7 @@ h2{
     margin-top: 30px;
     margin-bottom: 92px;
 
- }
+ }*/
 
  .latest-news{
      list-style: none;
@@ -224,6 +236,11 @@ h2{
        padding-bottom: 20px;
        padding-left: 44px;
        padding-right: 46px;
+   }
+
+   .cart{
+       width: 256px;
+       height: 280px;
    }
     
 
